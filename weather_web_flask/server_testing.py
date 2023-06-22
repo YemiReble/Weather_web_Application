@@ -14,18 +14,24 @@ app.url_map.strict_slashes = False
 # python os.urandom().hex() function)
 # app.config['SECRET_KEY'] = 'your secret key'
 
+
 @app.route('/')
 def index():
     return render_template('weather.html')
 
-@app.route('/test/')
+
+@app.route('/test')
 def server_test():
+    local = request.args.get('q')
+    return 'Location is {}'.format(local)
     return 'Your Application Server is working fine'
 
-@app.route('/search/<string>', methods=['GET', 'POST'])
-def search(string):
+
+@app.route('/search/', methods=['GET', 'POST'])
+def search():
+    location = request.args.get('q')
     try:
-        city = string
+        city = location
         api_key = key
         url = 'http://api.openweathermap.org/data/2.5/weather?q={}&appid={}'.format(
             city, api_key)
@@ -37,11 +43,15 @@ def search(string):
         description = data['weather'][0]['description']
 
         # Render the HTML template with the weather information
-        return render_template('index.html', city=city,
-            temperature=temperature, description=description)
+        return render_template(
+            'index.html',
+            city=city,
+            temperature=temperature,
+            description=description)
 
     except Exception as e:
         return render_template('error_page.html')
+
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port='5000', debug=True)

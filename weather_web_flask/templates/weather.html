@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/styles/style.css">
+    <link rel="shortcut icon" href="static/img/icon.ico">
+    <!-- <script src="scripts/"></script> Yet to be completed -->
+    <title>Weather</title>
+</head>
+<body class="bg">
+    <header>
+        <h1>Weather Today</h1>
+        <h3 class="blog">Blog</h3>
+        <h3 class="readme">Readme</h3>
+    </header>
+    <div class="container">
+        <section class="sections">
+            <article class="container1">
+                <h2 id="font">Weather<br>Application</h2>
+                <form action="http://127.0.0.1:5000/search/" method="get" class="search-bar">
+                    <input type="text" placeholder="Search Any Location" name="q">
+                    <button type="submit"><img class="search_img" src="static/img/web-search.png" alt=""></button>
+                    <button type="submit" class="button2">Search</button>
+                </form>
+            </article>
+            <article class="container2">
+                <h2 id="font">Current<br>Weather</h2>
+                <!-- To add image source later -->
+                <img src="static/img/sky-icon-2.png" alt="static/img/sky-icon-3.png">
+                <p class="weather_status"> -- </p>
+                <p class="current_weather">--°C</p>
+                <p class="location"> -- </p>
+            </article>
+            <article class="container3">
+                <h2 id="font">Weather<br>Forecast</h2>
+                <!-- Some List of Weather Forecast Here! -->
+            </article>
+        </section>
+    </div>
+    <footer>
+        <p class="foot">&copy; 2023 Copyright: All Rights Reserved | Developed by <NAME><b>YemiDev</b></NAME></p>
+        <p class="portfolio">Portfolio Project | ALX Full-Stack Software Engineering</p>
+        <!-- <p>Contact us: <a href="mailto:info@mywebsite.com">info@mywebsite.com</a></p> -->
+    </footer>
+</body>
+</html>
