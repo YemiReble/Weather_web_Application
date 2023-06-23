@@ -7,7 +7,7 @@ A Flask program that gets weather status from an api
 from flask import Flask, render_template, request
 from flask import send_file
 import requests
-from api_key.key import key, remove_char, secret_key
+from api_key.key import key, kelvin_to_degree, secret_key
 
 app = Flask(__name__, static_folder='static')
 app.url_map.strict_slashes = False
@@ -40,21 +40,27 @@ def search():
     # try:
     city = location
     api_key = key
-    url = 'http://api.openweathermap.org/data/2.5/weather?q={}&appid={}'.format(
+    url = 'https://api.openweathermap.org/data/2.5/weather?q={}&appid={}'.format(
         city, api_key)
     response = requests.get(url)
     data = response.json()
 
     # Extract the weather information
-    temperature = data['main']['temp']
+    kelvin_temperature = data['main']['temp']
     description = data['weather'][0]['description']
+    kelvin_feels_like = data['main']['feels_like']
+
+    # Convert Temperature
+    temperature = kelvin_to_degree(kelvin_temperature)
+    feels_like = kelvin_to_degree(kelvin_feels_like)
 
     # Render the HTML template with the weather information
     return render_template(
         'weather_result.html',
         city=city,
         temperature=temperature,
-        description=description)
+        description=description,
+        feels_like=feels_like)
 
 
 @app.errorhandler(404)
