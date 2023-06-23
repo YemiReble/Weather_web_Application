@@ -24,7 +24,7 @@
                 <!--When the search button is clicked my the user, the search request will be sent to the file styles (temporaryly) -->
                 <form action="http://127.0.0.1:5000/search/" method="get" class="search-bar">
                     <input type="text" placeholder="Search Any Location" name="q">
-                    <button type="submit"><img class="search_img" src="static/img/web-search.png" alt=""></button>
+                    <button type="submit"><img class="search_img" src="{{url_for('static', filename='img/web-search.png')}}" alt=""></button>
                     <button type="submit" class="button2">Search</button>
                 </form>
             </article>
