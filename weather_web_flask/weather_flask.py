@@ -37,30 +37,33 @@ def search():
     """This function processes the request sent my the user"""
     location = request.args.get('q')
 
-    # try:
-    city = location
-    api_key = key
-    url = 'https://api.openweathermap.org/data/2.5/weather?q={}&appid={}'.format(
-        city, api_key)
-    response = requests.get(url)
-    data = response.json()
+    try:
+        city = location
+        api_key = key
+        url = 'https://api.openweathermap.org/data/2.5/weather?q={}&appid={}'.format(
+            city, api_key)
+        response = requests.get(url)
+        data = response.json()
 
-    # Extract the weather information
-    kelvin_temperature = data['main']['temp']
-    description = data['weather'][0]['description']
-    kelvin_feels_like = data['main']['feels_like']
+        # Extract the weather information
+        kelvin_temperature = data['main']['temp']
+        description = data['weather'][0]['description']
+        kelvin_feels_like = data['main']['feels_like']
 
-    # Convert Temperature
-    temperature = kelvin_to_degree(kelvin_temperature)
-    feels_like = kelvin_to_degree(kelvin_feels_like)
+        # Convert Temperature
+        temperature = kelvin_to_degree(kelvin_temperature)
+        feels_like = kelvin_to_degree(kelvin_feels_like)
 
-    # Render the HTML template with the weather information
-    return render_template(
-        'weather_result.html',
-        city=city,
-        temperature=temperature,
-        description=description,
-        feels_like=feels_like)
+        # Render the HTML template with the weather information
+        return render_template(
+            'weather_result.html',
+            city=city,
+            temperature=temperature,
+            description=description,
+            feels_like=feels_like)
+    
+    except KeyError:
+        return render_template('key_error.html')
 
 
 @app.errorhandler(404)
