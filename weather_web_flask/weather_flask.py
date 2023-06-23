@@ -11,7 +11,7 @@ from api_key.key import key, remove_char, secret_key
 
 app = Flask(__name__, static_folder='static')
 app.url_map.strict_slashes = False
-# Falsh Message (You will have to obtain secrete key form
+# Flash Message (You will have to obtain secrete key form
 # python os.urandom().hex() function)
 # app.config['SECRET_KEY'] = secret_key
 
