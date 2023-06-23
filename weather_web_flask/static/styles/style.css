@@ -152,16 +152,32 @@ button {
 
 .key_error_button {
     border: 0;
-    border-radius: 19px;
-    width: 124px;
-    height: 35px;
+    border-radius: 7px;
+    width: 134px;
+    height: 46px;
     background: #011E2F;
     cursor: pointer;
     position: absolute;
-    bottom: -105%;
-    justify-self: center; /* Pay attention to this line */
     color:#9bd1ca;
     font-weight: bold;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -0%);
+}
+
+.p404_button {
+    border: 0;
+    border-radius: 7px;
+    width: 134px;
+    height: 46px;
+    background: #011E2F;
+    cursor: pointer;
+    position: absolute;
+    color:#9bd1ca;
+    font-weight: bold;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -0%);
 }
 
 .error{
