@@ -61,9 +61,13 @@ def search():
             temperature=temperature,
             description=description,
             feels_like=feels_like)
-    
+
+    # Raise Exception when user enter an invalid city or country name
     except KeyError:
-        return render_template('key_error.html')
+        return render_template('key_error.html', city=city)
+    # Raise Exception when Webserver lost connection to the API
+    except ConnectionError:
+        return render_template('connection_error.html')
 
 
 @app.errorhandler(404)
