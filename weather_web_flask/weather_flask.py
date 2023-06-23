@@ -7,6 +7,7 @@ A Flask program that gets weather status from an api
 from flask import Flask, render_template, request
 from flask import send_file
 import requests
+import urllib3
 from api_key.key import key, kelvin_to_degree, secret_key
 
 app = Flask(__name__, static_folder='static')
@@ -18,7 +19,7 @@ app.url_map.strict_slashes = False
 app.config['STATIC_URL'] = 'static/'
 app.config['STATICFILES_DIRS'] = [
     'static/*'
-    ]
+]
 
 
 @app.route('/')
@@ -66,8 +67,8 @@ def search():
     except KeyError:
         return render_template('key_error.html', city=city)
     # Raise Exception when Webserver lost connection to the API
-    except ConnectionError:
-        return render_template('connection_error.html')
+    # except ConnectionError:
+    #    return render_template('connection_error.html')
 
 
 @app.errorhandler(404)
