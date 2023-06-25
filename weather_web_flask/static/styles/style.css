@@ -137,6 +137,9 @@ input:-webkit-autofill:active {
     position: absolute;
     top: 169px;
     left: 219px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .country p {
     padding: 0%; /* Not neccessary */
