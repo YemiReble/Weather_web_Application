@@ -58,6 +58,9 @@
     position: absolute;
     top: 35px;
     left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .max_value_box2 {
     background-color: #D3F8D7;
@@ -68,6 +71,9 @@
     position: absolute;
     top: 35px;
     left: 86px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .feels_like_box3 {
     background-color: #D3F8D7;
@@ -79,6 +85,9 @@
     right: 0px;
     left: 203px;
     top: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .box2 {
     border: none; 
@@ -107,6 +116,9 @@
     border-radius: 7px;
     top: 26px;
     left: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .sunset {
     position: absolute;
@@ -123,6 +135,9 @@
     right: 0px;
     left: 203px;
     top: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .pressure {
     position: absolute;
@@ -138,6 +153,9 @@
     position: absolute;
     top: 83px;
     left: 57px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .humidity {
     position: absolute;
@@ -154,4 +172,7 @@
     right: 0px;
     left: 203px;
     top: 83px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
