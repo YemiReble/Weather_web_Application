@@ -1,0 +1,157 @@
+/* More CSS */
+.box1 {
+    border: none; 
+    height: 90px;
+    width: auto;
+    padding: 3%;
+    position: relative;
+    font-weight: bold;
+}
+.box1 p {
+    margin: 0%;
+}
+.tmep {
+    position: relative;
+    top: 0%;
+    left: 8%;
+    width: 95px;
+}
+.min {
+    position: absolute;
+    width: 27px;
+    top: 73px;
+    left: 38px;
+}
+.min_value {
+    /* position: absolute; not neccessary*/
+    /* width: 35px; */
+    top: 24%;
+    left: 3%;
+}
+.max {
+    position: absolute;
+    width: 30px;
+    top: 73px;
+    left: 93px;
+}
+.max_value {
+    /* width: 35px; */
+    top: 28px;
+    left: 62px;
+}
+.feels_like {
+    position: absolute;
+    width: 78px;
+    right: 0px;
+    left: 187px;
+    top: 8px;
+}
+.feels_like_value {
+    font-weight: bold;
+}
+.min_value_box1 {
+    background-color: #D3F8D7;
+    width: 44px;
+    height: 34px;
+    border-bottom: 2px;
+    border-radius: 7px;
+    position: absolute;
+    top: 35px;
+    left: 30px;
+}
+.max_value_box2 {
+    background-color: #D3F8D7;
+    width: 44px;
+    height: 34px;
+    border-bottom: 2px;
+    border-radius: 7px;
+    position: absolute;
+    top: 35px;
+    left: 86px;
+}
+.feels_like_box3 {
+    background-color: #D3F8D7;
+    width: 44px;
+    height: 34px;
+    border-bottom: 2px;
+    border-radius: 7px;
+    position: absolute;
+    right: 0px;
+    left: 203px;
+    top: 35px;
+}
+.box2 {
+    border: none; 
+    height: 123px;
+    width: auto;
+    padding: 3%;
+    position: relative;
+    font-weight: bold;
+    top: -12px;
+}
+.box2 p {
+    margin: 0%;
+}
+.sunrise {
+    position: absolute;
+    width: 78px;
+    left: 40px;
+    top: 8px;
+}
+.sunrise_box {
+    position: relative;
+    background-color: #D3F8D7;
+    width: 44px;
+    height: 34px;
+    border-bottom: 2px;
+    border-radius: 7px;
+    top: 26px;
+    left: 48px;
+}
+.sunset {
+    position: absolute;
+    top: 8px;
+    left: 197px;
+}
+.sunset_box {
+    background-color: #D3F8D7;
+    width: 44px;
+    height: 34px;
+    border-bottom: 2px;
+    border-radius: 7px;
+    position: absolute;
+    right: 0px;
+    left: 203px;
+    top: 35px;
+}
+.pressure {
+    position: absolute;
+    top: 124px;
+    left: 46px;
+}
+.pressure_box {
+    background-color: #D3F8D7;
+    width: 44px;
+    height: 34px;
+    border-bottom: 2px;
+    border-radius: 7px;
+    position: absolute;
+    top: 83px;
+    left: 57px;
+}
+.humidity {
+    position: absolute;
+    top: 124px;
+    left: 191px;
+}
+.humidity_box {
+    background-color: #D3F8D7;
+    width: 44px;
+    height: 34px;
+    border-bottom: 2px;
+    border-radius: 7px;
+    position: absolute;
+    right: 0px;
+    left: 203px;
+    top: 83px;
+}
