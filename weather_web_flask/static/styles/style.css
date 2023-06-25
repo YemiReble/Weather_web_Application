@@ -114,6 +114,13 @@ input {
     color: #ffffff;
     font-size: 16px;
 }
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-text-fill-color: #ffffff;
+    transition: background-color 5000s ease-in-out!important;
+}
 ::placeholder {
     color: #b8b8b8;
 }
