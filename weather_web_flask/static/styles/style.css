@@ -5,7 +5,6 @@ body {
 .bg {
     background-color: #D3F8D7;
 }
-
 #font {
     text-align: center;
     font-weight: bold;
@@ -13,8 +12,11 @@ body {
     font-size: 27px;
     margin-bottom: 0;
 }
-
-header {
+header div {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
     background-color: #A8BE97;
     padding: 7px;
     /* width: 100%; */
@@ -38,10 +40,11 @@ header h1 {
 }
 
 section {
+    position: relative;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 37px auto;
+    margin: 83px auto;
     text-align: center;
 }
 
@@ -117,6 +120,22 @@ input {
 /* .search_img {
     width: 40px;
 } */
+
+.country {
+    background-color: #D3F8D7;
+    width: 44px;
+    height: 34px;
+    border-bottom: 2px;
+    border-radius: 7px;
+    position: absolute;
+    top: 340px;
+    left: 313px;
+}
+.country p {
+    padding: 0%; /* Not neccessary */
+    margin: 0%; /* Not neccessary */
+    font-weight: bold;
+}
 
 button img {
     width: 40px;

@@ -13,9 +13,11 @@
 </head>
 <body class="bg">
     <header>
-        <h1>Weather Today</h1>
-        <h3 class="blog">Blog</h3>
-        <h3 class="readme">Readme</h3>
+        <div>
+            <h1>Weather Today</h1>
+            <h3 class="blog">Blog</h3>
+            <h3 class="readme">Readme</h3>
+        </div>
     </header>
     <div class="container">
         <section class="sections">
@@ -27,6 +29,10 @@
                     <button type="submit"><img class="search_img" src="{{url_for('static', filename='img/web-search.png')}}" alt=""></button>
                     <button type="submit" class="button2">Search</button>
                 </form>
+                <!-- NEW DATA HERE -->
+                    <div class="country">
+                        <p>{{ country }}</p>
+                    </div>
             </article>
             <article class="container2">
                 <h2 id="font">Current<br>Weather</h2>
@@ -37,8 +43,41 @@
                 <p class="location"> {{ city }} </p>
             </article>
             <article class="container3">
-                <h2 id="font">Weather<br>Forecast</h2>
+                <h2 id="font">Weather<br>Reports</h2>
                 <!-- Some List of Weather Forecast Here! -->
+                <div class="box1">
+                    <p class="tmep">Temperature</p>
+                    <p class="min">Min</p>
+                        <div class="min_value_box1">
+                            <p class="min_value">{{min}}°C</p>
+                        </div>
+                    <p class="max">Max</p>
+                        <div class="max_value_box2">
+                            <p class="max_value">{{max}}°C</p>
+                        </div>
+                    <p class="feels_like">Feels Like</p>
+                        <div class="feels_like_box3">
+                            <p class="feels_like_value">{{feels_like}}°C</p>
+                        </div>
+                </div>
+                <div class="box2">
+                    <p class="sunrise">Sunrise</p>
+                    <div class="sunrise_box">
+                        <p>{{sunrise}}am</p>
+                    </div>
+                    <p class="sunset">Sunset</p>
+                    <div class="sunset_box">
+                        <p>{{sunset}}pm</p>
+                    </div>
+                    <p class="pressure">Pressure</p>
+                    <div class="pressure_box">
+                        <p>n</p>
+                    </div>
+                    <p class="humidity">Humidity</p>
+                    <div class="humidity_box">
+                        <p>{{humidity}}%</p>
+                    </div>
+                </div>
             </article>
         </section>
     </div>
