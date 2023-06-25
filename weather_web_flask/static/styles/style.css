@@ -135,8 +135,8 @@ input:-webkit-autofill:active {
     border-bottom: 2px;
     border-radius: 7px;
     position: absolute;
-    top: 340px;
-    left: 313px;
+    top: 169px;
+    left: 219px;
 }
 .country p {
     padding: 0%; /* Not neccessary */
