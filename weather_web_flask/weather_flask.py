@@ -12,14 +12,6 @@ from api_key.key import key, kelvin_to_degree, secret_key
 
 app = Flask(__name__, static_folder='static')
 app.url_map.strict_slashes = False
-# Flash Message (You will have to obtain secrete key form
-# python os.urandom().hex() function)
-# app.config['SECRET_KEY'] = secret_key
-
-app.config['STATIC_URL'] = 'static/'
-app.config['STATICFILES_DIRS'] = [
-    'static/*'
-]
 
 
 @app.route('/')
@@ -50,10 +42,19 @@ def search():
         kelvin_temperature = data['main']['temp']
         description = data['weather'][0]['description']
         kelvin_feels_like = data['main']['feels_like']
+        temp_max = data['main']['temp_max']
+        temp_min = data['main']['temp_max']
+        pressure = data['main']['pressure']
+        sunrise = data['sys']['sunrise']
+        sunset = data['sys']['sunset']
+        humidity = data['main']['humidity']
+        country = data['sys']['country']
 
         # Convert Temperature
         temperature = kelvin_to_degree(kelvin_temperature)
         feels_like = kelvin_to_degree(kelvin_feels_like)
+        min_temp = kelvin_to_degree(temp_min)
+        max_temp = kelvin_to_degree(temp_max)
 
         # Render the HTML template with the weather information
         return render_template(
@@ -61,7 +62,11 @@ def search():
             city=city,
             temperature=temperature,
             description=description,
-            feels_like=feels_like)
+            feels_like=feels_like,
+            min_temp=min_temp,
+            max_temp=max_temp,
+            humidity=humidity,
+            country=country)
 
     # Raise Exception when user enter an invalid city or country name
     except KeyError:
