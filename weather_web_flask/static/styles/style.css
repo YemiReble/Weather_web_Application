@@ -16,7 +16,7 @@ header div {
     position: absolute;
     top: 0%;
     left: 0%;
-    width: 100%;
+    width: 99%;
     background-color: #A8BE97;
     padding: 7px;
     /* width: 100%; */
@@ -27,6 +27,8 @@ header div {
 header h1 {
     margin: 0;
     position: absolute;
+    left: 26px;
+    top: 11px;
 }
 
 .blog {
