@@ -7,8 +7,9 @@ A Flask program that gets weather status from an api
 from flask import Flask, render_template, request
 from flask import send_file
 import requests
-import urllib3
+import datetime
 from api_key.key import key, kelvin_to_degree, secret_key
+from api_key.key import convert_time
 
 app = Flask(__name__, static_folder='static')
 app.url_map.strict_slashes = False
@@ -45,16 +46,21 @@ def search():
         temp_max = data['main']['temp_max']
         temp_min = data['main']['temp_max']
         pressure = data['main']['pressure']
-        sunrise = data['sys']['sunrise']
-        sunset = data['sys']['sunset']
+        sunrises = data['sys']['sunrise']
+        sunsets = data['sys']['sunset']
         humidity = data['main']['humidity']
         country = data['sys']['country']
+        time_zone = data['timezone']
 
         # Convert Temperature
         temperature = kelvin_to_degree(kelvin_temperature)
         feels_like = kelvin_to_degree(kelvin_feels_like)
         min_temp = kelvin_to_degree(temp_min)
         max_temp = kelvin_to_degree(temp_max)
+
+        # Time conversion
+        sunrise = convert_time(time_zone, sunrises)
+        sunset = convert_time(time_zone, sunsets)
 
         # Render the HTML template with the weather information
         return render_template(
@@ -66,7 +72,10 @@ def search():
             min_temp=min_temp,
             max_temp=max_temp,
             humidity=humidity,
-            country=country)
+            country=country,
+            sunrise=sunrise,
+            sunset=sunset,
+            pressure=pressure)
 
     # Raise Exception when user enter an invalid city or country name
     except KeyError:
