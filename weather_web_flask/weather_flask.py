@@ -44,7 +44,7 @@ def search():
         description = data['weather'][0]['description']
         kelvin_feels_like = data['main']['feels_like']
         temp_max = data['main']['temp_max']
-        temp_min = data['main']['temp_max']
+        temp_min = data['main']['temp_min']
         pressure = data['main']['pressure']
         sunrises = data['sys']['sunrise']
         sunsets = data['sys']['sunset']
