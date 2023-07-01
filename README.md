@@ -40,13 +40,11 @@ $ cd Weather_web_Application/
 Auto Run Server
 $ ./auto_start_server.sh
 ```
-
-Now that the server is running, head over to your browser
+**Sept 3:** Now that the server is running, head over to your browser
 ```
 http://127.0.0.1:5000
 ```
-You Browser should display the Weather Application Home Page as seen below
-
+Your browser should display the Weather Application Home Page as shown below
 ###### If You Encounter An Error
 Insert your OpenWeatherMap API Key in the required file on line (8)
 ```
