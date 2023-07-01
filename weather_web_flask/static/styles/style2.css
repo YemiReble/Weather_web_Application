@@ -9,6 +9,7 @@
 }
 .box1 p {
     margin: 0%;
+    font-size: 15px;
 }
 .tmep {
     position: relative;
@@ -100,6 +101,7 @@
 }
 .box2 p {
     margin: 0%;
+    font-size: 15px;
 }
 .sunrise {
     position: absolute;
