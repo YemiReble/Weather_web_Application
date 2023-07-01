@@ -40,6 +40,13 @@ $ cd Weather_web_Application/
 Auto Run Server
 $ ./auto_start_server.sh
 ```
+
+Now that the server is running, head over to your browser
+```
+http://127.0.0.1:5000
+```
+You Browser should display the Weather Application Home Page as seen below
+
 ###### If You Encounter An Error
 Insert your OpenWeatherMap API Key in the required file on line (8)
 ```
@@ -59,5 +66,3 @@ $ vim api_key/key.py
 ##### Full page View
 ![Full Page View](https://github.com/YemiReble/Weather_web_Application/blob/master/weather_web_flask/static/img/Full_Home_Page.JPG)
 
-##Creator
-Loading...
