@@ -57,12 +57,7 @@ $ vim api_key/key.py
 ![Report Section](https://github.com/YemiReble/Weather_web_Application/tree/master/weather_web_flask/static/img/Weather_Reports.JPG)
 
 ##### Full page View
-![Full Page View](https://github.com/YemiReble/Weather_web_Application/tree/master/weather_web_flask/static/img/Full_Home_Page.JPG)
-
-<!-- https://github.com/YemiReble/Weather_web_Application/tree/master/weather_web_flask/static/img/Weather_Reports.JPG
-https://github.com/YemiReble/Weather_web_Application/tree/master/weather_web_flask/static/img/Weather_Reports.JPG
-https://github.com/YemiReble/Weather_web_Application/tree/master/weather_web_flask/static/img/Weather_Reports.JPG
-https://github.com/YemiReble/Weather_web_Application/tree/master/weather_web_flask/static/img/Weather_Reports.JPG -- >
+![Full Page View](https://github.com/YemiReble/Weather_web_Application/blob/master/weather_web_flask/static/img/Full_Home_Page.JPG)
 
 ##Creator
 Loading...
