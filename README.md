@@ -19,25 +19,27 @@ The weather app is a valuable tool for anyone who wants to stay informed about t
 * Current weather conditions
 * Up-to-date weather information for any location in the world
 * Accurate and reliable reports in accordance to the OpenWeatherMap API Data
-* Information about the **Max and Min**, **sunrise and sunset times**, **humidity**, and what the weather feels like
+* Information about the **Max and Min**, **Sunrise and Sunset Times**, **Humidity**, and what the weather feels like
 
 ## How To Use This Program
+Make sure that the requirements to run this program is avalable on your machine, kindly see the
+[reqirements](https://github.com/YemiReble/Weather_web_Application/blob/master/requirments.txt).txt file if you haven't
+done so but if you already have all the requirements in place, you may proceed to the following steps.
+
 **Step 1:** Clone this Repository
 ```Bash
 $ git clone https://github.com/yemireble/Weather_web_Application.git
 ```
-<p>Insert your OpenWeatherMap API Key in the required file on line (8)</p>
 
-```
-$ vim api_key/key.py
-```
-
-**Setp 2:** 
+**Setp 2:** Change dir and run the server automatically 
 ```
 $ cd Weather_web_Application/
 
-'Auto Run Server'
-
-$ ./auto_start_server
+Auto Run Server
+$ ./auto_start_server.sh
 ```
-
+###### If You Encounter An Error
+Insert your OpenWeatherMap API Key in the required file on line (8)
+```
+$ vim api_key/key.py
+```
