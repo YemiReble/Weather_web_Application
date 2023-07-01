@@ -47,19 +47,16 @@ $ vim api_key/key.py
 ```
 
 ## A Display Of Its UI
-Search Section
-![The Search
-Area](https://github.com/YemiReble/Weather_web_Application/tree/master/weather_web_flask/static/img/Search_Area.JPG)
+##### Search Section
+![The SearchArea](https://github.com/YemiReble/Weather_web_Application/tree/master/weather_web_flask/static/img/Search_Area.JPG)
 
-Current Weather Section
-![Current
-Weater](https://github.com/YemiReble/Weather_web_Application/tree/master/weather_web_flask/static/img/Current_weather_display.JPG)
+#### Current Weather Section
+![Current Weater](https://github.com/YemiReble/Weather_web_Application/tree/master/weather_web_flask/static/img/Current_weather_display.JPG)
 
-Report Section
-![Report
-Section](https://github.com/YemiReble/Weather_web_Application/tree/master/weather_web_flask/static/img/Weather_Reports.JPG)
+##### Report Section
+![Report Section](https://github.com/YemiReble/Weather_web_Application/tree/master/weather_web_flask/static/img/Weather_Reports.JPG)
 
-Full page View
+##### Full page View
 ![Full Page View](https://github.com/YemiReble/Weather_web_Application/tree/master/weather_web_flask/static/img/Full_Home_Page.JPG)
 
 <!-- https://github.com/YemiReble/Weather_web_Application/tree/master/weather_web_flask/static/img/Weather_Reports.JPG
