@@ -29,11 +29,12 @@ header h1 {
     position: absolute;
     left: 26px;
     top: 11px;
+    font-size: 1.7em;
 }
 
 .blog {
     position: relative;
-    right: 70px;
+    right: 3%;
     border: 0;
     border-radius: 5px;
     width: 90px;
@@ -51,7 +52,7 @@ header h1 {
 
 .readme {
     position: absolute;
-    right: 187px;
+    right: 53%;
     border: 0;
     border-radius: 5px;
     width: 90px;
