@@ -35,7 +35,8 @@ header h1 {
     position: absolute;
     top: 0%;
     left: 0%;
-    width: 99%;
+    right: 0%;
+    /* width: 99%; */
     background-color: #A8BE97;
     padding: 7px;
     height: 40px;
