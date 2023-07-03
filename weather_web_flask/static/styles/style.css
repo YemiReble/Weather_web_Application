@@ -38,12 +38,14 @@ header h1 {
 .dropdown .dropbtn {
     font-size: 16px;  
     border: none;
-    outline: none;
-    color: white;
+    outline: auto;
+    color: #011E2F;
     padding: 14px 16px;
     background-color: inherit;
     font-family: inherit;
     margin: 0;
+    outline-color: #011E2F;
+    font-weight: bold;
 }
   
 .dropdown:hover .dropbtn {
@@ -57,7 +59,7 @@ header h1 {
     display: none;
     position: absolute;
     background-color:#D3F8D7;
-    min-width: 105px;
+    min-width: 106px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
