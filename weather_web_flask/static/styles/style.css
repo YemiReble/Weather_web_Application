@@ -80,7 +80,7 @@ header h1 {
     display: block;
 }
 /* ========================================= */
-/* .header_container {
+.header_container {
     position: absolute;
     top: 0%;
     left: 0%;
@@ -92,7 +92,7 @@ header h1 {
     font-size: 14px;
 }
 
-.head_button {
+/* .head_button {
     position: absolute;
     right: 0%;
     width: 200px;
