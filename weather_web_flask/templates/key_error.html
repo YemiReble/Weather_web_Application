@@ -16,11 +16,14 @@
     <header>
         <div class="header_container">
             <h1>Weather Today</h1>
-            <section class="head_button">
-                <a href="https://yemidev.medium.com/"><h3 class="blog">Blog</h3></a>
-                <a href="https://github.com/yemireble/Weather_web_Application"><h3 class="readme">GitHub</h3></a>
-            </section>
-        </div>
+            <div class="dropdown">
+                <p class="dropbtn">Infograph<i class="fa fa-caret-down"></i></p>
+                   <div class="dropdown-content">
+                       <a href="https://yemidev.medium.com/"><h3 class="blog">Blog</h3></a>
+                       <a href="https://github.com/yemireble/Weather_web_Application"><h3 class="readme">GitHub</h3></a>
+                   </div>
+           </div>
+       </div>
     </header>
     <p class="error">Invalid Name!</p>
     <p class="parag">Your search result "{{ city }}" is not available. <br>You may reconsider reviewing the name of the city or country you provided and try again.
