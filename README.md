@@ -16,7 +16,7 @@ The weather app is a valuable tool for anyone who wants to stay informed about t
 
 ## Website
 View Website:
-[Yemi Dev Weather Application](https://weather.yemidev.tech)
+[YemiDev Weather Application](https://weather.yemidev.tech)
 
 ## Features
 * Easy to use interface
