@@ -23,7 +23,7 @@ def index():
 @app.route('/test/')
 def server_test():
     """ Just for testing if the server is running"""
-    return 'Your Application Server is working fine'
+    return 'Server is working fine.\nCondition: [100%] Running'
 
 
 @app.route('/search/', methods=['GET', 'POST'])
