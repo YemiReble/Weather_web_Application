@@ -1,2 +1,5 @@
 *.pyc
 Automation_Files
+__pycache__/
+./api_key/__pycache__/
+weather_web_flask/__pycache__/
