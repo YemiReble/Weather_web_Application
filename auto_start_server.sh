@@ -4,4 +4,3 @@
 #============================================================
 
 python3 -m weather_web_flask.weather_flask
-# python3 -m weather_web_flask.server_testing
