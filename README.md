@@ -50,7 +50,7 @@ http://127.0.0.1:5000
 ```
 Your browser should display the Weather Application Home Page as shown below
 ###### If You Encounter An Error
-Insert your OpenWeatherMap API Key in the required file on line (8)
+Obtaine OpenWeatherMap API Key and insert it in the required file on line (8)
 ```
 $ vim api_key/key.py
 ```
