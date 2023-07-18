@@ -4,8 +4,8 @@
 
 import datetime
 
-
-key = "03114a9f3c7eb0229c961035177e6c2f"
+# Insert you API key here
+key = ""
 
 # Secret key for flash message
 secret_key = '3346dcf0af8ed02e7a0dedf29db000a630a5aede7922ecc9'
@@ -18,14 +18,14 @@ other_keys = [{'fb64d30a9e2586b13b979e4d9d67fa16999c29f5251593cb'},
 
 def remove_char(char):
     """ Function that remove unwanted characters "?q="
-    from the string given my the user"""
-    # char = request.form['query']
+    from the string given by the user"""
+    # char = request.form['char']
     result = char.replace('?q=', '')
     return (result)
 
 
 def kelvin_to_degree(temp):
-    """This function convert Temprature from 'kelvin to Degree'"""
+    """This function convert Temprature from 'kelvin to Celsius'"""
     kelvin = 273.15
     degree = temp - kelvin
     return round(degree)
@@ -52,6 +52,3 @@ def convert_time_old(time):  # This function doesn't work as expected
     date_e = datetime.datetime.utcnow() + datetime.timedelta(
         seconds=seconds_to_sunrise)
     return format_date(date_e.strftime("%I:%M"))
-
-# print(remove_char('?q=Lagos'))
-# print(kelvin_to_degree(299.82))
